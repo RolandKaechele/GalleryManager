@@ -51,7 +51,7 @@ Create a persistent GameObject and attach `GalleryManager`. Define entries in th
 
 ```csharp
 // Instance method (when GalleryManager is in the same scene)
-var gallery = FindObjectOfType<GalleryManager.Runtime.GalleryManager>();
+var gallery = FindFirstObjectByType<GalleryManager.Runtime.GalleryManager>();
 gallery.Unlock("chapter_01_artwork");
 
 // Static helper (usable from any scene — no reference needed)

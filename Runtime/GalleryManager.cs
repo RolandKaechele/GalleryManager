@@ -125,7 +125,7 @@ namespace GalleryManager.Runtime
             if (PlayerPrefs.GetInt(UnlockPrefix + id, 0) == 1) return true;
 
 #if GALLERYMANAGER_SM
-            var sm = FindObjectOfType<SaveManager.Runtime.SaveManager>();
+            var sm = FindFirstObjectByType<SaveManager.Runtime.SaveManager>();
             if (sm != null && sm.IsSet("gallery_" + id)) return true;
 #endif
 
@@ -148,7 +148,7 @@ namespace GalleryManager.Runtime
             OnEntryUnlocked?.Invoke(id);
 
 #if GALLERYMANAGER_EM
-            EventManager.Runtime.EventManager.Raise("GalleryEntryUnlocked", id);
+            FindFirstObjectByType<EventManager.Runtime.EventManager>()?.Fire("GalleryEntryUnlocked", id);
 #endif
 
             Debug.Log($"[GalleryManager] Unlocked entry: {id}");
