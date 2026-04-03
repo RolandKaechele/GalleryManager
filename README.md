@@ -36,9 +36,14 @@ Optionally integrates with SaveManager, AchievementManager, and EventManager.
 git clone https://github.com/RolandKaechele/GalleryManager.git Assets/GalleryManager
 ```
 
-### Option C — Manual copy
+### Option C — npm / postinstall
 
-Copy the `GalleryManager/` folder into your project's `Assets/` directory.
+```bash
+cd Assets/GalleryManager
+npm install
+```
+
+`postinstall.js` confirms installation. No additional data folders are required.
 
 
 ## Quick Start

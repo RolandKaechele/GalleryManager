@@ -23,5 +23,8 @@
     "music",
     "framework"
   ],
-  "documentationUrl": "https://github.com/RolandKaechele/GalleryManager#readme"
+  "documentationUrl": "https://github.com/RolandKaechele/GalleryManager#readme",
+  "scripts": {
+    "postinstall": "node postinstall.js"
+  }
 }
