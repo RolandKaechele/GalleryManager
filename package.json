@@ -1,0 +1,27 @@
+{
+  "name": "com.rolandkaechele.gallerymanager",
+  "displayName": "Gallery Manager",
+  "version": "1.0.0",
+  "unity": "2022.3",
+  "description": "Manages unlockable gallery content (artworks, cutscenes, music, collectibles). Persist unlock state via PlayerPrefs. Optional integration with SaveManager, AchievementManager, and EventManager.",
+  "author": {
+    "name": "Roland Kaechele",
+    "url": "https://github.com/RolandKaechele/GalleryManager"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RolandKaechele/GalleryManager.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "unity",
+    "gallery",
+    "unlock",
+    "collectible",
+    "artwork",
+    "cutscene",
+    "music",
+    "framework"
+  ],
+  "documentationUrl": "https://github.com/RolandKaechele/GalleryManager#readme"
+}
