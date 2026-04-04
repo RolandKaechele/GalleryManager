@@ -16,6 +16,7 @@ Optionally integrates with SaveManager, AchievementManager, and EventManager.
 - **AchievementManager integration** — mirrors achievement unlocks as gallery unlocks (activated via `GALLERYMANAGER_AM`)
 - **EventManager integration** — fires `GalleryEntryUnlocked` as a named GameEvent (activated via `GALLERYMANAGER_EM`)
 - **Custom Inspector** — live unlock/lock per entry, Unlock All / Lock All buttons
+- **Odin Inspector integration** — `SerializedMonoBehaviour` base for full Inspector serialization of complex types; runtime-display fields marked `[ReadOnly]` in Play Mode (activated via `ODIN_INSPECTOR`)
 
 
 ## Installation
@@ -139,6 +140,11 @@ Add `GALLERYMANAGER_EM` to Scripting Define Symbols.
 Fires the named GameEvent `"GalleryEntryUnlocked"` (value = entry id) on every new unlock.
 
 
+### Odin Inspector (`ODIN_INSPECTOR`)
+
+Requires `ODIN_INSPECTOR` define (standard Odin Inspector scripting define). Inherits from `SerializedMonoBehaviour` for full Inspector serialization; runtime-display fields are marked `[ReadOnly]`.
+
+
 ## Dependencies
 
 | Dependency | Required | Notes |
@@ -147,6 +153,7 @@ Fires the named GameEvent `"GalleryEntryUnlocked"` (value = entry id) on every n
 | SaveManager | optional | Required when `GALLERYMANAGER_SM` is defined |
 | AchievementManager | optional | Required when `GALLERYMANAGER_AM` is defined |
 | EventManager | optional | Required when `GALLERYMANAGER_EM` is defined |
+| Odin Inspector | optional | Required when `ODIN_INSPECTOR` is defined |
 
 
 ## Repository

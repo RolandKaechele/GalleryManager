@@ -1,6 +1,9 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+#if ODIN_INSPECTOR
+using Sirenix.OdinInspector;
+#endif
 
 namespace GalleryManager.Runtime
 {
@@ -68,7 +71,11 @@ namespace GalleryManager.Runtime
     /// </summary>
     [AddComponentMenu("GalleryManager/Gallery Manager")]
     [DisallowMultipleComponent]
+#if ODIN_INSPECTOR
+    public class GalleryManager : SerializedMonoBehaviour
+#else
     public class GalleryManager : MonoBehaviour
+#endif
     {
         // -------------------------------------------------------------------------
         // Inspector
