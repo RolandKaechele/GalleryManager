@@ -16,6 +16,7 @@ Optionally integrates with SaveManager, AchievementManager, and EventManager.
 - **AchievementManager integration** — mirrors achievement unlocks as gallery unlocks (activated via `GALLERYMANAGER_AM`)
 - **EventManager integration** — fires `GalleryEntryUnlocked` as a named GameEvent (activated via `GALLERYMANAGER_EM`)
 - **Custom Inspector** — live unlock/lock per entry, Unlock All / Lock All buttons
+- **DOTween Pro integration** — `DOFade`, `DOPunchScale`, and `DOAnchorPos` animate gallery panel open, thumbnail grid stagger, and unlock toast notifications (activated via `GALLERYMANAGER_DOTWEEN`)
 - **Odin Inspector integration** — `SerializedMonoBehaviour` base for full Inspector serialization of complex types; runtime-display fields marked `[ReadOnly]` in Play Mode (activated via `ODIN_INSPECTOR`)
 
 
