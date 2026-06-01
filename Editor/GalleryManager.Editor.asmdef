@@ -1,8 +1,9 @@
-﻿{
+{
     "name": "GalleryManager.Editor",
     "rootNamespace": "GalleryManager.Editor",
     "references": [
-        "GalleryManager.Runtime"
+        "GalleryManager.Runtime",
+        "UnityEngine.UI"
     ],
     "includePlatforms": [
         "Editor"
